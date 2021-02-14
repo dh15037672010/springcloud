@@ -1,0 +1,15 @@
+#  git.uri地址表示远程仓库地址  master表示分支  searchPaths表示目录
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/how2j/springcloudConfig/
+          searchPaths: respo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

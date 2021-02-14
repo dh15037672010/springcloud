@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springCloudConfigServer" />
+        <module name="productViewServiceFeign" />
+        <module name="productDataService" />
+        <module name="productViewServiceRibbon" />
+        <module name="eurekaServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="eurekaServer" target="1.8" />
+      <module name="product-data-servicea" target="1.8" />
+      <module name="productDataService" target="1.8" />
+      <module name="productViewServiceFeign" target="1.8" />
+      <module name="productViewServiceRibbon" target="1.8" />
+      <module name="springcloud" target="1.8" />
+      <module name="springCloudConfigServer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eurekaServer" options="-parameters" />
+      <module name="product-data-servicea" options="-parameters" />
+      <module name="productDataService" options="-parameters" />
+      <module name="productViewServiceFeign" options="-parameters" />
+      <module name="productViewServiceRibbon" options="-parameters" />
+      <module name="springCloudConfigServer" options="-parameters" />
+    </option>
+  </component>
+</project>
